@@ -8,8 +8,10 @@ import org.bukkit.generator.BiomeProvider;
 import org.bukkit.generator.ChunkGenerator;
 import org.bukkit.generator.WorldInfo;
 import org.bukkit.plugin.java.JavaPlugin;
+import org.jetbrains.annotations.Contract;
 import org.jetbrains.annotations.NotNull;
 import org.jetbrains.annotations.Nullable;
+import org.jetbrains.annotations.Unmodifiable;
 
 import java.util.List;
 import java.util.Random;
@@ -49,10 +51,10 @@ public final class VoidGenerator extends JavaPlugin {
             return Biome.PLAINS;
         }
 
-        public @NotNull List<Biome> getBiomes(@NotNull WorldInfo worldInfo) {
+        @Contract(value = "_ -> new", pure = true)
+        public @NotNull @Unmodifiable List<Biome> getBiomes(@NotNull WorldInfo worldInfo) {
             return List.of(Biome.PLAINS);
         }
     }
-
 
 }

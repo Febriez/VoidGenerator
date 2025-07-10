@@ -1,5 +1,5 @@
 name: VoidGenerator
 version: ${project.version}
-main: com.coffeetory.voidGenerator.VoidGenerator
+main: com.febrie.voidGenerator.VoidGenerator
 api-version: '1.21'
 load: STARTUP

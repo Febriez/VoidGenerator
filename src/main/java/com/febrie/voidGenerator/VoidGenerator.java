@@ -1,4 +1,4 @@
-package com.coffeetory.voidGenerator;
+package com.febrie.voidGenerator;
 
 import org.bukkit.Location;
 import org.bukkit.Material;

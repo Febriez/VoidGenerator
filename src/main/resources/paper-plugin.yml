@@ -2,5 +2,5 @@ name: VoidGenerator
 version: ${project.version}
 main: com.febrie.voidGenerator.VoidGenerator
 description: Performance-optimized void world chunk generator
-api-version: '1.21'
+api-version: '26.1'
 load: STARTUP
